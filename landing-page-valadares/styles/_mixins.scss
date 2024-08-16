@@ -1,0 +1,62 @@
+@import 'variaveis';
+
+@mixin titulo-escuro {
+    color: $secundaria;
+    font-weight: $bold;
+    font-size: $g;
+    font-family: $fonte-principal;
+}
+
+@mixin titulo-claro {
+    color: $texto-claro;
+    font-weight: $bold;
+    font-size: $g;
+    font-family: $fonte-principal;
+}
+
+@mixin texto-escuro {
+    color: $texto-escuro;
+    font-weight: $regular;
+    font-size: $p + 0.1.5rem;
+    font-family: $fonte-principal;
+}
+
+@mixin texto-claro {
+    color: $texto-claro;
+    font-weight: $regular;
+    font-size: $p + 0.1.5rem;
+    font-family: $fonte-principal;
+}
+
+@mixin botao-escuro ($w, $h) {
+    background-color: $principal;
+    color: $texto-claro;
+    font-weight: $regular;
+    font-size: $p;
+    width: $w;
+    height: $h;
+    border-radius: 10px;
+    border: none;
+    font-family: $fonte-principal;
+}
+
+@mixin botao-claro ($w, $h) {
+    background-color: $texto-claro;
+    color: $secundaria;
+    font-weight: $regular;
+    font-size: $p;
+    width: $w;
+    height: $h;
+    border-radius: 10px;
+    border: none;
+    font-family: $fonte-principal;
+}
+
+@mixin texto-formulario {
+    color: $texto-escuro;
+    font-weight: $bold;
+    font-size: $m;
+    font-family: $fonte-principal;
+}
+
+
