@@ -70,7 +70,7 @@ export default function RootLayout({ children }) {
               </div>
               <div className="footer__container__direito__localizacao">
                 <img src="/localizacao.svg" alt="" />
-                <div>
+                <div className="footer__container__direito__localizacao__texto">
                   <p>Av. José Silva de Azevedo Neto, 200 – BL 04 – Sala 104 - O2 Corporate Barra - Barra da Tijuca - RJ, 22775-056.</p>
                 </div>
               </div>

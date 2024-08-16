@@ -122,7 +122,133 @@ header {
 
 footer {
     display: flex;
+    flex-direction: column;
     background-color: $footer;
     color: $texto-claro;
+    font-family: $fonte-principal;
+    align-items: center;
+
+
+    .footer__container {
+
+        display: flex;
+        flex-direction: row;    
+        width: 85%;
+        justify-content: space-between;
+
+        .footer__container__esquerdo {
+
+            display: flex;
+            flex-direction: column;
+            width: 47%;
+
+            .footer__container__esquerdo__acima {
+
+                display: flex;
+                flex-direction: row;
+
+                img {
+
+                }
+
+                .footer__container__esquerdo__acima__termos {
+
+                    display: flex;
+                    flex-direction: column;
+
+                }
+            }
+
+            .footer__container__esquerdo__abaixo {
+
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                padding: 0rem;
+
+            }
+
+            
+        }
+
+        .footer__container__direito {
+
+            display: flex;
+            flex-direction: column;
+            width: 47%;
+            justify-content: start;
+            padding: 0rem;
+
+            .footer__container__direito__texto {
+                font-size: $m;
+                font-weight: $bold;
+
+            }
+
+            .footer__container__direito__redes {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 5.8rem;
+
+
+                img {
+                    width: 1.4rem;
+                }
+
+            }
+
+            .footer__container__direito__whatsapp {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                
+
+                img {
+                    width: 1.4rem;
+                    margin-right: 0.3rem;
+                }
+            }
+
+            .footer__container__direito__email {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                
+
+                img {
+                    width: 1.4rem;
+                    margin-right: 0.3rem;
+                }                
+
+            }
+
+            .footer__container__direito__localizacao {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+
+                img {
+                    width: 1.4rem;
+                    margin-right: 0.3rem;
+                }
+
+                .footer__container__direito__localizacao__texto {
+
+                    width: 15rem;
+
+                }
+            }
+
+        }
+    }
+
+    .footer__container__copyright {
+
+    }
 }
 
