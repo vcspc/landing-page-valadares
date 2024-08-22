@@ -54,6 +54,11 @@
     border-radius: 10px;
     border: none;
     font-family: $fonte-principal;
+
+    &:hover {
+        background-color: $secundaria;
+        color: $texto-claro;
+    }
 }
 
 @mixin texto-formulario {

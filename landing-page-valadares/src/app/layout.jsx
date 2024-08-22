@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 /* import "style/globals.css"; */
 import "./globals.scss";
 
+import Link from "next/link";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -55,9 +57,9 @@ export default function RootLayout({ children }) {
             <dir className="footer__container__direito">
               <p className="footer__container__direito__texto">Siga nas redes</p>
               <div className="footer__container__direito__redes">
-                <img src="instagram.svg" alt="" />
-                <img src="facebook.svg" alt="" />
-                <img src="linkedin.svg" alt="" />
+                <Link href="https://www.instagram.com/valadaresefueta.adv?igsh=MmZhZmx5b2Nibnly"><img src="instagram.svg" alt="" /></Link>
+                <Link href="https://www.facebook.com/ValadareseFueta?mibextid=ZbWKwL"><img src="facebook.svg" alt="" /></Link>
+                <Link href="https://www.linkedin.com/company/valadares-e-fueta-advogados/"><img src="linkedin.svg" alt="" /></Link>
               </div>
               <p className="footer__container__direito__texto">Entre em contato</p>
               <div className="footer__container__direito__whatsapp">

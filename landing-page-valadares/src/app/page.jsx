@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <div className="container__video">
         <Botao 
-          link="https://www.google.com.br"
+          link="https://wa.me/5521965450470?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20sua%20assessoria%20jur%C3%ADdica"
           texto="ENTRE EM CONTATO"
           cor="botao-escuro"
         />
@@ -18,7 +18,7 @@ export default function Home() {
       </div>
 
       <div className="container__faixa">
-        <p>Somos o Escritório de Advocacia Valadares e Fueta Advogados.
+        <p>Somos o Escritório de Advocacia Valadares e Fueta Advogados.<br />
         <span> Seu escudo jurídico no mundo empresarial.</span></p>
       </div>
 
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </div>
         <Botao 
-          link="https://www.google.com.br"
+          link="https://wa.me/5521965450470?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20sua%20assessoria%20jur%C3%ADdica"
           texto="ENTRE EM CONTATO"
           cor="botao-escuro"
         />
@@ -85,7 +85,7 @@ export default function Home() {
           </p>
           <img src="/mosaico.svg" alt="" />
         </div>
-        <Link href="https://www.google.com.br" className="container__quemsomos__link">
+        <Link href="https://www.instagram.com/valadaresefueta.adv?igsh=MmZhZmx5b2Nibnly" className="container__quemsomos__link">
           <div className="container__quemsomos__link__instagram" >
             <img src="/logo_instagram.svg" alt="" />
             <p>valadaresefueta.adv</p>
@@ -110,7 +110,7 @@ export default function Home() {
           />
         </div>
         <Botao 
-          link="https://www.google.com.br"
+          link="https://wa.me/5521965450470?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20sua%20assessoria%20jur%C3%ADdica"
           texto="ENTRE EM CONTATO"
           cor="botao-escuro"
         />
@@ -137,7 +137,7 @@ export default function Home() {
           />
         </div>
         <Botao 
-          link="https://www.google.com.br"
+          link="https://wa.me/5521965450470?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20sua%20assessoria%20jur%C3%ADdica"
           texto="ENTRE EM CONTATO"
           cor="botao-claro"
         />
@@ -170,7 +170,7 @@ export default function Home() {
           {/* <button type="submit">Enviar</button> */}
           <Botao 
             link="https://www.google.com.br"
-            texto="ENTRE EM CONTATO"
+            texto="RECEBA GRATUITAMENTE"
             cor="botao-escuro"
           />
         </form>
