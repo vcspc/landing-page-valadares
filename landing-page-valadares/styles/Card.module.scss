@@ -1,0 +1,51 @@
+@import 'variaveis';
+@import 'mixins';
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27rem;
+    height: 8rem;
+    background-color: $secundaria;
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* ustify-content: space-between; */
+        width: 23rem;
+        height: 5rem;
+ 
+    
+        .icone {
+            
+        }
+    
+        .conteudo {
+            display: flex;
+            flex-direction: column;
+            font-family: $fonte-principal;
+            color: $texto-claro;
+            font-size: $p;
+            line-height: 1rem;
+            width: 20rem;
+            margin-left: 1rem;
+            
+            
+    
+            .titulo {
+                font-weight: $bold;
+    
+            }
+    
+            .descricao {
+                font-weight: $light;
+    
+            }
+        }
+    }
+
+}
+
+

@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
             </dir>
           </div>
           <div className="footer__container__copyright">
-            <p>© Copyright 2024 – Todos os Direitos Reservados VALADARES E FUETA ADVOGADOS Desenvolvido por VIRA NEGÓCIOS</p>
+            <p>© Copyright 2024 – Todos os Direitos Reservados <span>VALADARES E FUETA ADVOGADOS</span> Desenvolvido por <span>VIRA NEGÓCIOS</span></p>
           </div>
         </footer>
       </body>

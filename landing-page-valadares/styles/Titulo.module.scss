@@ -1,0 +1,10 @@
+@import 'variaveis';
+@import 'mixins';
+
+.titulo-escuro {
+    @include titulo-escuro;
+}
+
+.titulo-claro {
+    @include titulo-claro;
+}

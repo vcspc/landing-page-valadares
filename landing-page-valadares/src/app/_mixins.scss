@@ -17,14 +17,14 @@
 @mixin texto-escuro {
     color: $texto-escuro;
     font-weight: $regular;
-    font-size: $p + 0.1.5rem;
+    font-size: $m;
     font-family: $fonte-principal;
 }
 
 @mixin texto-claro {
     color: $texto-claro;
     font-weight: $regular;
-    font-size: $p + 0.1.5rem;
+    font-size: $m;
     font-family: $fonte-principal;
 }
 

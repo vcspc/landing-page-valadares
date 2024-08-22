@@ -1,0 +1,17 @@
+@import 'variaveis';
+@import 'mixins';
+
+.link {
+
+    text-decoration: none;
+    color: inherit;
+
+    .botao-escuro {
+        @include botao-escuro(16rem, 3.3rem);
+    }
+
+    .botao-claro {
+        @include botao-claro(16rem, 3.3rem);
+    }
+
+}

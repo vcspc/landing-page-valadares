@@ -1,0 +1,32 @@
+@import 'variaveis';
+@import 'mixins';
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $fonte-principal;
+    width: 24rem;
+
+    .foto {
+        margin-bottom: 0.5rem;
+        width: 9rem;
+
+    }
+
+    .nome {
+        color: $secundaria;
+        font-size: $g;
+        font-weight: $bold;
+        margin-bottom: 1rem;
+        
+    }
+
+    .descricao {
+        font-size: $m;
+        line-height: 1.7rem;
+        text-align: justify;
+    }
+}

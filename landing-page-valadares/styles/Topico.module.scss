@@ -1,0 +1,20 @@
+@import 'variaveis';
+@import 'mixins';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    font-family: $fonte-principal;
+    font-size: $m;
+    color: $texto-claro;
+    background-color: $principal;
+    line-height: 1.6rem;
+}
+
+.topico {
+    font-weight: $bold;
+}
+
+.descricao {
+    
+}

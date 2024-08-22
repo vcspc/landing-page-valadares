@@ -120,6 +120,193 @@ header {
 
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container__video {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        width: 70%;
+        margin-top: 3rem;
+        height: 40rem;
+        
+
+        p {
+            @include texto-escuro;
+            margin-top: 2rem;
+
+            span {
+                font-weight: $bold;
+                color: $secundaria;
+            }
+        }
+    }
+
+    .container__faixa {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 10rem;
+        margin-top: 4rem;
+        background-color: $secundaria;
+        border: 0.2rem solid $principal;
+
+        p {
+            @include texto-claro;
+            font-size: $m + 0.5rem;
+            width: 80%;
+            text-align: center;
+
+            span {
+                font-weight: $bold;
+            }
+        }
+    }
+
+    .container__solucoes {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 4rem;
+
+        .container__solucoes__cards {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 55rem;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+
+            .container__solucoes__cards__linha {
+
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-around;
+                margin-bottom: 0.5rem;
+
+            }
+        }
+    }
+
+    .container__quemsomos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin-top: 4rem;
+
+        .container__quemsomos__texto {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            align-items: center;
+            text-align: justify;
+            margin-top: 2rem;
+            @include texto-escuro;
+
+            p {
+
+                width: 50%;
+            }
+        }
+
+        .container__quemsomos__link {
+            text-decoration: none;
+            color: inherit;
+            margin-top: 4rem;
+            cursor: pointer;
+            
+
+            .container__quemsomos__link__instagram {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 25rem;
+                height: 3.5rem;
+                border-radius: 35px;
+                border: 0.1rem solid $secundaria;
+                color: $secundaria;
+                font-weight: $bold;
+
+                
+                p {
+
+                    margin-left: 0.2rem;
+                    font-family: $fonte-principal;
+                    font-size: $p;
+                }
+            }
+        }
+    }
+
+    .container__socios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+        width: 100%;
+
+        .container__socios__perfis {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 63%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+    }
+
+    .container__beneficios {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+        width: 100%;
+        height: 45rem;
+        background-color: $principal;
+        justify-content: center;
+
+        .container__beneficios__topicos {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70%;
+            height: 25rem;
+            justify-content: space-between;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+
+
+
+
+
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -133,19 +320,22 @@ footer {
 
         display: flex;
         flex-direction: row;    
-        width: 85%;
+        width: 75%;
         justify-content: space-between;
+        margin-top: 3rem;
 
         .footer__container__esquerdo {
 
             display: flex;
             flex-direction: column;
-            width: 47%;
+            width: 40%;
 
             .footer__container__esquerdo__acima {
 
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 5rem;
 
                 img {
 
@@ -175,13 +365,24 @@ footer {
 
             display: flex;
             flex-direction: column;
-            width: 47%;
+            width: 40%;
             justify-content: start;
             padding: 0rem;
+            margin: 0rem;
+            
 
             .footer__container__direito__texto {
                 font-size: $m;
                 font-weight: $bold;
+
+                &:nth-of-type(1) {
+                    margin-bottom: 0.5rem;
+
+                }
+
+                &:nth-of-type(2) {
+                    margin-bottom: 0.5rem;
+                }
 
             }
 
@@ -191,6 +392,7 @@ footer {
                 flex-direction: row;
                 justify-content: space-between;
                 width: 5.8rem;
+                margin-bottom: 1rem;
 
 
                 img {
@@ -204,6 +406,7 @@ footer {
                 display: flex;
                 flex-direction: row;
                 justify-content: start;
+                margin-bottom: 0.6rem;
                 
 
                 img {
@@ -217,6 +420,7 @@ footer {
                 display: flex;
                 flex-direction: row;
                 justify-content: start;
+                margin-bottom: 0.6rem;
                 
 
                 img {
@@ -231,15 +435,18 @@ footer {
                 display: flex;
                 flex-direction: row;
                 justify-content: start;
+                align-items: start;
+                margin-bottom: 2.5rem;
 
                 img {
-                    width: 1.4rem;
+                    width: 1rem;
                     margin-right: 0.3rem;
+                    
                 }
 
                 .footer__container__direito__localizacao__texto {
 
-                    width: 15rem;
+                    width: 100%;
 
                 }
             }
@@ -249,6 +456,15 @@ footer {
 
     .footer__container__copyright {
 
+        display: flex;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+
+        span {
+            font-weight: $bold;
+        }
     }
 }
 
