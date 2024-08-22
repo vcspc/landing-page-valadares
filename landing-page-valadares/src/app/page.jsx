@@ -103,10 +103,10 @@ export default function Home() {
             descricao="Advogado desde 2001 e advogado de empresa pública desde 2005. Inscrito na OAB/RJ sob n° 113.167 e na OAB/SP sob o n° 460.093-A. Graduado em Direito pela UFRJ em 2001, pós-graduado MBA em Direito Empresarial pela FGV em 2004 e pós-graduado em Direito Digital pela faculdade CERS em 2019."
           />
           <Perfil 
-            foto="/cesar.svg"
-            alt="foto de perfil do sócio César"
-            nome="Cesar Fueta"
-            descricao="Advogado desde 2001 e advogado de empresa pública desde 2005. Inscrito na OAB/RJ sob n° 113.167 e na OAB/SP sob o n° 460.093-A. Graduado em Direito pela UFRJ em 2001, pós-graduado MBA em Direito Empresarial pela FGV em 2004 e pós-graduado em Direito Digital pela faculdade CERS em 2019."
+            foto="/fernanda.svg"
+            alt="foto de perfil da sócia Fernanda"
+            nome="Fernanda Valadares"
+            descricao="Advogada desde 2005 e advogada de empresa pública desde 2010. Inscrita na OAB/RJ sob o n° 178.822. Graduada em Direito pela PUC/GO em 2005 pós-graduada em Direito Público e pós graduada em Planejamento Patrimonial e Sucessório pela FGV/SP."
           />
         </div>
         <Botao 
@@ -124,16 +124,16 @@ export default function Home() {
             descricao=" Nossa equipe é composta por advogados especializados em direito empresarial e direito digital, com profundo conhecimento no mundo dos negócios e seus desafios."
           />
           <Topico 
-            topico="Expertise com pequenas e médias empresas:"
-            descricao=" Nossa equipe é composta por advogados especializados em direito empresarial e direito digital, com profundo conhecimento no mundo dos negócios e seus desafios."
+            topico="Foco em resultados:"
+            descricao=" Nossa meta é ser um parceiro estratégico para o seu negócio, buscando soluções que impulsionem seus resultados e agreguem valor."
           />
           <Topico 
-            topico="Expertise com pequenas e médias empresas:"
-            descricao=" Nossa equipe é composta por advogados especializados em direito empresarial e direito digital, com profundo conhecimento no mundo dos negócios e seus desafios."
+            topico="Atendimento ágil e personalizado:"
+            descricao=" Valorizamos o contato direto e transparente com nossos clientes, garantindo acesso fácil aos advogados para tirar dúvidas e oferecer suporte."
           />
           <Topico 
-            topico="Expertise com pequenas e médias empresas:"
-            descricao=" Nossa equipe é composta por advogados especializados em direito empresarial e direito digital, com profundo conhecimento no mundo dos negócios e seus desafios."
+            topico="Prevenção e resolução de conflitos:"
+            descricao=" Trabalhamos proativamente para prevenir problemas legais e resolver conflitos de forma eficiente e vantajosa para o cliente."
           />
         </div>
         <Botao 
