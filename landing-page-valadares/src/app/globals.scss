@@ -300,6 +300,140 @@ main {
         }
     }
 
+.container__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 3rem 0 3rem 0;
+
+    .container__formulario__titulo {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        text-align: center;
+
+        .titulo-claro {
+            font-size: $xg;
+            font-weight: $bold;
+            color: $texto-claro;
+        }
+    }
+
+    .container__formulario__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 3rem;
+
+        span {
+            color: $principal;
+        }
+
+        .container__formulario__form__nome {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            label {
+                font-size: $m;
+            }
+
+            input {
+                width: 100%;
+                padding: 0.5rem;
+                border: 0.1rem solid $secundaria;
+                border-radius: 0.3rem;
+            }
+        }
+
+        .container__formulario__form__empresa {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            label {
+                font-size: $m;
+            }
+
+            input {
+                width: 100%;
+                padding: 0.5rem;
+                border: 0.1rem solid $secundaria;
+                border-radius: 0.3rem;
+            }
+        }
+
+        .container__formulario__form__cargo {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            label {
+                font-size: $m;
+            }
+
+            input {
+                width: 100%;
+                padding: 0.5rem;
+                border: 0.1rem solid $secundaria;
+                border-radius: 0.3rem;
+            }
+        }
+
+        .container__formulario__form__email {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            label {
+                font-size: $m;
+            }
+
+            input {
+                width: 100%;
+                padding: 0.5rem;
+                border: 0.1rem solid $secundaria;
+                border-radius: 0.3rem;
+            }
+        }
+
+        .container__formulario__form__telefone {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3rem;
+
+            label {
+                font-size: $m;
+            }
+
+            input {
+                width: 100%;
+                padding: 0.5rem;
+                border: 0.1rem solid $secundaria;
+                border-radius: 0.3rem;
+            }
+        }
+
+        /* button {
+            width: 15rem;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 0.3rem;
+            background-color: $secundaria;
+            color: $principal;
+            cursor: pointer;
+        } */
+    }
+}
+
 
 
 

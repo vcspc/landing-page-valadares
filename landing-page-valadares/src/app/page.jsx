@@ -33,38 +33,38 @@ export default function Home() {
               descricao="Assessoria jurídica consultiva, preventiva e contenciosa para auxílio nas tomadas de decisões do dia a dia empresarial."
             />
             <Card 
-              icone="/departamento.svg"
-              alt="icone em vetor de balões de conversa"
-              titulo="SEU DEPARTAMENTO JURÍDICO"
-              descricao="Assessoria jurídica consultiva, preventiva e contenciosa para auxílio nas tomadas de decisões do dia a dia empresarial."
+              icone="/startups.svg"
+              alt="icone em vetor de gráfico"
+              titulo="STARTUPS"
+              descricao="Possuímos conhecimento desse modelo de negócio e somos capazes de buscar estratégias jurídicas e mecanismos de desenvolvimento com base legal e de forma colaborativa."
             />
           </div>
           <div className="container__solucoes__cards__linha">
             <Card 
-              icone="/departamento.svg"
-              alt="icone em vetor de balões de conversa"
-              titulo="SEU DEPARTAMENTO JURÍDICO"
-              descricao="Assessoria jurídica consultiva, preventiva e contenciosa para auxílio nas tomadas de decisões do dia a dia empresarial."
+              icone="/representacao.svg"
+              alt="icone em vetor de um martelo"
+              titulo="REPRESENTAÇÃO JURÍDICA"
+              descricao="Defesa eficiente dos seus direitos em processos judiciais, com advogados experientes em diversas áreas do direito (Direito Empresarial, Direito do Consumidor, Direito Trabalhista e Direito Sucessório)."
             />
             <Card 
-              icone="/departamento.svg"
-              alt="icone em vetor de balões de conversa"
-              titulo="SEU DEPARTAMENTO JURÍDICO"
-              descricao="Assessoria jurídica consultiva, preventiva e contenciosa para auxílio nas tomadas de decisões do dia a dia empresarial."
+              icone="/digital.svg"
+              alt="icone em vetor de carrinho de compras"
+              titulo="EMPREENDEDORISMO DIGITAL"
+              descricao="Assessoria jurídica em relações trabalhistas, direito do consumidor, direito empresarial, direito digital e demais direitos aplicados ao ambiente digital. "
             />
           </div>
           <div className="container__solucoes__cards__linha">
             <Card 
-              icone="/departamento.svg"
-              alt="icone em vetor de balões de conversa"
-              titulo="SEU DEPARTAMENTO JURÍDICO"
-              descricao="Assessoria jurídica consultiva, preventiva e contenciosa para auxílio nas tomadas de decisões do dia a dia empresarial."
+              icone="/contratos.svg"
+              alt="icone em vetor de folhas de papeis"
+              titulo="CONTRATOS"
+              descricao="Assessoria personalizada ao modelo de negócio (online/offline) definindo direitos e obrigações."
             />
             <Card 
-              icone="/departamento.svg"
-              alt="icone em vetor de balões de conversa"
-              titulo="SEU DEPARTAMENTO JURÍDICO"
-              descricao="Assessoria jurídica consultiva, preventiva e contenciosa para auxílio nas tomadas de decisões do dia a dia empresarial."
+              icone="/materiais.svg"
+              alt="icone em vetor de folhas de papeis"
+              titulo="MATERIAIS COMPLEMENTARES"
+              descricao="E-books, artigos e outros materiais informativos sobre temas jurídicos relevantes para auxiliar na tomada de decisões da sua equipe."
             />
           </div>
         </div>
@@ -144,15 +144,15 @@ export default function Home() {
       </div>
       <div className="container__formulario">
         <div className="container__formulario__titulo">
-          <Titulo titulo="POR QUE CONTRATAR NOSSA ASSESSORIA?" cor="titulo-claro"/>
+          <Titulo titulo="RECEBA MATERIAIS GRATUITOS SOBRE DIREITO PARA O SEU NEGÓCIO" cor="titulo-escuro"/>
         </div>
         <form className="container__formulario__form">
           <div className="container__formulario__form__nome">
-            <label htmlFor="nome">Nome</label>
+            <label htmlFor="nome">Nome<span>*</span></label>
             <input type="text" id="nome" name="nome" />
           </div>
           <div className="container__formulario__form__empresa">
-            <label htmlFor="empresa">Empresa</label>
+            <label htmlFor="empresa">Empresa<span>*</span></label>
             <input type="text" id="empresa" name="empresa" />
           </div>
           <div className="container__formulario__form__cargo">
@@ -160,14 +160,19 @@ export default function Home() {
             <input type="text" id="cargo" name="cargo" />
           </div>
           <div className="container__formulario__form__email">
-            <label htmlFor="email">E-mail</label>
+            <label htmlFor="email">E-mail<span>*</span></label>
             <input type="email" id="email" name="email" />
           </div>
           <div className="container__formulario__form__telefone">
-            <label htmlFor="telefone">Telefone</label>
+            <label htmlFor="telefone">Telefone<span>*</span></label>
             <input type="text" id="telefone" name="telefone" />
           </div>
-          <button type="submit">Enviar</button>
+          {/* <button type="submit">Enviar</button> */}
+          <Botao 
+            link="https://www.google.com.br"
+            texto="ENTRE EM CONTATO"
+            cor="botao-escuro"
+          />
         </form>
       </div>
 
