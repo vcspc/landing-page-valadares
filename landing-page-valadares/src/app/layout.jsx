@@ -38,9 +38,9 @@ export default function RootLayout({ children }) {
               <div className="footer__container__esquerdo__acima">
                 <img src="/logo_branco.svg" alt="" />
                 <div className="footer__container__esquerdo__acima__termos">
-                  <p>Termo de Privacidade</p>
-                  <p>Termos de Uso</p>
-                  <p>Política de Cookies</p>
+                  <Link style={{textdecoration: "none", color: "inherit"}} href="/termodeprivacidade"><p>Termo de Privacidade</p></Link>
+                  <Link style={{textdecoration: "none", color: "inherit"}} href="/termodeuso"><p>Termos de Uso</p></Link>
+                  <Link style={{textdecoration: "none", color: "inherit"}} href="/politicadecookies"><p>Política de Cookies</p></Link>
                 </div>
               </div>
               <ul className="footer__container__esquerdo__abaixo">

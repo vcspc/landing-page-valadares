@@ -1,10 +1,54 @@
+"use client";
+
 import Botao from '../../components/Botao';
 import Card from '../../components/Card';
 import Titulo from '../../components/Titulo';
 import Perfil from '../../components/Perfil';
 import Topico from '../../components/Topico';
-import Link from 'next/link'
+import Link from 'next/link';
+import emailjs from '@emailjs/browser';
+import { useState } from 'react';
+
 export default function Home() {
+
+  const [email, setEmail] = useState('');
+  const [nome, setNome] = useState('');
+  const [empresa, setEmpresa] = useState('');
+  const [cargo, setCargo] = useState('');
+  const [telefone, setTelefone] = useState('');
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    if (email === '' || nome === '' || empresa === '' || telefone === '') {
+      alert('Preencha todos os campos obrigatórios!');
+      return;
+    }
+
+    /* alert('Email enviado com sucesso!'); */
+
+    const templateParams = {
+      from_nome: nome,
+      from_email: email,
+      from_cargo: cargo,
+      from_telefone: telefone,
+      from_empresa: empresa
+    }
+
+    emailjs.send("service_8b34itn", "template_f65dhgj", templateParams, "ikUKFv1H7PN-YLn7l").then((response) => {
+      console.log('EMAIL ENVIADO!', response.status, response.text);
+      setNome('');
+      setEmail('');
+      setTelefone('');
+      setEmpresa('');
+      setCargo('');
+    }, (error) => {
+      console.log("ERRO!: ", error);
+    })
+  }
+
+
+
   return (
     <main>
       <div className="container__video">
@@ -146,28 +190,28 @@ export default function Home() {
         <div className="container__formulario__titulo">
           <Titulo titulo="RECEBA MATERIAIS GRATUITOS SOBRE DIREITO PARA O SEU NEGÓCIO" cor="titulo-escuro"/>
         </div>
-        <form className="container__formulario__form">
+        <form className="container__formulario__form" onSubmit={sendEmail}>
           <div className="container__formulario__form__nome">
             <label htmlFor="nome">Nome<span>*</span></label>
-            <input type="text" id="nome" name="nome" />
+            <input type="text" id="nome" name="nome" onChange={(e) => setNome(e.target.value)} value={nome}/>
           </div>
           <div className="container__formulario__form__empresa">
             <label htmlFor="empresa">Empresa<span>*</span></label>
-            <input type="text" id="empresa" name="empresa" />
+            <input type="text" id="empresa" name="empresa" onChange={(e) => setEmpresa(e.target.value)} value={empresa}/>
           </div>
           <div className="container__formulario__form__cargo">
             <label htmlFor="cargo">Cargo</label>
-            <input type="text" id="cargo" name="cargo" />
+            <input type="text" id="cargo" name="cargo" onChange={(e) => setCargo(e.target.value)} value={cargo}/>
           </div>
           <div className="container__formulario__form__email">
             <label htmlFor="email">E-mail<span>*</span></label>
-            <input type="email" id="email" name="email" />
+            <input type="email" id="email" name="email" onChange={(e) => setEmail(e.target.value)} value={email}/>
           </div>
           <div className="container__formulario__form__telefone">
             <label htmlFor="telefone">Telefone<span>*</span></label>
-            <input type="text" id="telefone" name="telefone" />
+            <input type="text" id="telefone" name="telefone" onChange={(e) => setTelefone(e.target.value)} value={telefone}/>
           </div>
-          {/* <button type="submit">Enviar</button> */}
+          <button type="submit">Enviar</button>
           <Botao 
             link="https://www.google.com.br"
             texto="RECEBA GRATUITAMENTE"
