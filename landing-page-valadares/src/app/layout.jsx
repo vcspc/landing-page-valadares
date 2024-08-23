@@ -11,7 +11,7 @@ export const metadata = {
   description: "Serviço de ",
   keywords: "Serviços jurídicos para empresas, assessoria jurídica para agências de publicidade, serviços jurídicos para e-commerce, advogado para agências de publicidade, materiais jurídicos para agências de marketing, direito empresarial, direito digital, marketing digital",
   icons: {
-    icon: "/logo.svg",
+    icon: "/logo.png",
   },
 };
 

@@ -48,4 +48,56 @@
 
 }
 
+@media (max-width: 430px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 9rem;
+        background-color: $secundaria;
+        margin-bottom: 0.5rem;
+    
+        .card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /* ustify-content: space-between; */
+            width: 90%;
+            height: 6rem;
+     
+        
+            .icone {
+                width: 3.5rem;
+            }
+        
+            .conteudo {
+                display: flex;
+                flex-direction: column;
+                font-family: $fonte-principal;
+                color: $texto-claro;
+                font-size: $pp - 0.1rem;
+                line-height: 0.9rem;
+                width: 20rem;
+                margin-left: 1rem;
+                
+                
+        
+                .titulo {
+                    font-weight: $bold;
+        
+                }
+        
+                .descricao {
+                    font-weight: $light;
+        
+                }
+            }
+        }
+    
+    }
+
+}
+
 

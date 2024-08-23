@@ -211,12 +211,8 @@ export default function Home() {
             <label htmlFor="telefone">Telefone<span>*</span></label>
             <input type="text" id="telefone" name="telefone" onChange={(e) => setTelefone(e.target.value)} value={telefone}/>
           </div>
-          <button type="submit">Enviar</button>
-          <Botao 
-            link="https://www.google.com.br"
-            texto="RECEBA GRATUITAMENTE"
-            cor="botao-escuro"
-          />
+          <button className="container__formulario__form__botao" type="submi">RECEBA GRATUITAMENTE</button>
+
         </form>
       </div>
     </main>

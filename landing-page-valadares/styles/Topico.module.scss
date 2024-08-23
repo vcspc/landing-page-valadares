@@ -18,3 +18,25 @@
 .descricao {
     
 }
+
+@media (max-width: 430px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        font-family: $fonte-principal;
+        font-size: $p + 0.1rem;
+        color: $texto-claro;
+        background-color: $principal;
+        line-height: 1.4rem;
+    }
+    
+    .topico {
+        font-weight: $bold;
+    }
+    
+    .descricao {
+        
+    }
+
+}

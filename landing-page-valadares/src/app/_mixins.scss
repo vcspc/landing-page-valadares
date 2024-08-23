@@ -5,6 +5,12 @@
     font-weight: $bold;
     font-size: $g;
     font-family: $fonte-principal;
+
+    @media (max-width: 430px) {
+
+        font-size: $m;
+        line-height: 25px;
+    }
 }
 
 @mixin titulo-claro {
@@ -12,6 +18,12 @@
     font-weight: $bold;
     font-size: $g;
     font-family: $fonte-principal;
+
+    @media (max-width: 430px) {
+
+        font-size: $m;
+        line-height: 25px;
+    }
 }
 
 @mixin texto-escuro {
@@ -19,6 +31,12 @@
     font-weight: $regular;
     font-size: $m;
     font-family: $fonte-principal;
+
+    @media (max-width: 430px) {
+
+        font-size: $p;
+        line-height: 19px;
+    }
 }
 
 @mixin texto-claro {
@@ -26,6 +44,12 @@
     font-weight: $regular;
     font-size: $m;
     font-family: $fonte-principal;
+
+    @media (max-width: 430px) {
+
+        font-size: $p;
+        line-height: 19px;
+    }
 }
 
 @mixin botao-escuro ($w, $h) {
@@ -38,6 +62,15 @@
     border-radius: 10px;
     border: none;
     font-family: $fonte-principal;
+
+    &:hover {
+        background-color: $secundaria;
+    }
+
+    @media (max-width: 430px) {
+
+        font-size: $pp;
+    }
 }
 
 @mixin botao-claro ($w, $h) {
@@ -58,5 +91,7 @@
     font-size: $m;
     font-family: $fonte-principal;
 }
+
+
 
 

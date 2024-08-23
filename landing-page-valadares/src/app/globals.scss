@@ -431,6 +431,10 @@ main {
             }
         }
 
+        .container__formulario__form__botao {
+            @include botao-escuro(16rem, 3.3rem)
+        }
+
         /* button {
             width: 15rem;
             padding: 0.5rem;
@@ -611,3 +615,400 @@ footer {
     }
 }
 
+@media (max-width: 430px) {
+    header {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        
+        .header__img {
+            z-index: 1;
+        }
+    
+        .header__banner {
+            width: 85%;
+            height: 20rem;
+            z-index: 2;
+            position: absolute;
+    
+            .header__banner__logo {
+                width: 4rem;
+                margin-top: 1.5rem;
+            }
+            
+            .header__banner__texto {
+    
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                margin-top: 0.6rem;
+    
+                .header__banner__texto__1 {
+                    color: $secundaria;
+                    font-size: $p;
+                    font-weight: 200;
+                }
+    
+                .header__banner__texto__2 {
+                    color: $principal;
+                    font-size: $p;
+                    font-weight: $bold;
+                    line-height: 19px;
+                }
+            }
+        }
+    
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .container__video {
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            width: 70%;
+            margin-top: 1.5rem;
+            height: 30rem;
+            
+    
+            p {
+                @include texto-escuro;
+                margin-top: 1rem;
+                width: 100%;
+                text-align: justify;
+    
+                span {
+                    font-weight: $bold;
+                    color: $secundaria;
+                }
+            }
+        }
+    
+        .container__faixa {
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 9rem;
+            margin-top: 2rem;
+            background-color: $secundaria;
+            border: 0.1.2rem solid $principal;
+    
+            p {
+                font-size: $m;
+                width: 90%;
+                text-align: center;
+                font-family: $fonte-principal;
+                line-height: 25px;
+                span {
+                    font-weight: $bold;
+                }
+            }
+        }
+    
+        .container__solucoes {
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 4rem;
+    
+            .container__solucoes__cards {
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+    
+                .container__solucoes__cards__linha {
+    
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 0rem;
+    
+                }
+            }
+        }
+    
+        .container__quemsomos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: 4rem;
+    
+            .container__quemsomos__texto {
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                align-items: center;
+                text-align: justify;
+                margin-top: 2rem;
+                @include texto-escuro;
+    
+                p {
+    
+                    width: 70%;
+                }
+
+                img {
+                    margin-top: 1rem;
+                    width: 20rem;
+                }
+            }
+
+
+    
+            .container__quemsomos__link {
+                text-decoration: none;
+                color: inherit;
+                margin-top: 2.5rem;
+                cursor: pointer;
+                
+    
+                .container__quemsomos__link__instagram {
+    
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    width: 15rem;
+                    height: 2rem;
+                    border-radius: 35px;
+                    border: 0.1rem solid $secundaria;
+                    color: $secundaria;
+                    font-weight: $bold;
+    
+                    
+                    p {
+    
+                        margin-left: 0.2rem;
+                        font-family: $fonte-principal;
+                        font-size: $pp;
+                    }
+
+                    img {
+
+                        width: 1rem;
+                    }
+                }
+            }
+        }
+    
+        .container__socios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 4rem;
+            width: 100%;
+    
+            .container__socios__perfis {
+    
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 85%;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+            
+        }
+    
+        .container__beneficios {
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4rem;
+            width: 90%;
+            height: 52rem;
+            background-color: $principal;
+            text-align: center;
+
+    
+            .container__beneficios__topicos {
+    
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+                height: 38rem;
+                justify-content: space-between;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                text-align: left;
+            }
+        }
+    
+    .container__formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 3rem 0 3rem 0;
+    
+        .container__formulario__titulo {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            align-items: center;
+            text-align: center;
+    
+            .titulo-claro {
+                font-size: $xg;
+                font-weight: $bold;
+                color: $texto-claro;
+            }
+        }
+    
+        .container__formulario__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: 3rem;
+            font-family: $fonte-principal;
+            
+    
+            span {
+                color: $principal;
+                font-weight: $bold;
+            }
+    
+            .container__formulario__form__nome {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+    
+                label {
+                    font-size: $p;
+                    font-weight: $bold;
+                }
+    
+                input {
+                    width: 100%;
+                    padding: 0.5rem;
+                    border: 0.1rem solid $secundaria;
+                    border-radius: 0.3rem;
+                }
+            }
+    
+            .container__formulario__form__empresa {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+    
+                label {
+                    font-size: $p;
+                    font-weight: $bold;
+                }
+    
+                input {
+                    width: 100%;
+                    padding: 0.5rem;
+                    border: 0.1rem solid $secundaria;
+                    border-radius: 0.3rem;
+                }
+            }
+    
+            .container__formulario__form__cargo {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+    
+                label {
+                    font-size: $p;
+                    font-weight: $bold;
+                }
+    
+                input {
+                    width: 100%;
+                    padding: 0.5rem;
+                    border: 0.1rem solid $secundaria;
+                    border-radius: 0.3rem;
+                }
+            }
+    
+            .container__formulario__form__email {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+    
+                label {
+                    font-size: $p;
+                    font-weight: $bold;
+                }
+    
+                input {
+                    width: 100%;
+                    padding: 0.5rem;
+                    border: 0.1rem solid $secundaria;
+                    border-radius: 0.3rem;
+                }
+            }
+    
+            .container__formulario__form__telefone {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 3rem;
+    
+                label {
+                    font-size: $p;
+                    font-weight: $bold;
+                }
+    
+                input {
+                    width: 100%;
+                    padding: 0.5rem;
+                    border: 0.1rem solid $secundaria;
+                    border-radius: 0.3rem;
+                }
+            }
+    
+            .container__formulario__form__botao {
+                @include botao-escuro(13rem, 2.2rem)
+            }
+    
+            /* button {
+                width: 15rem;
+                padding: 0.5rem;
+                border: none;
+                border-radius: 0.3rem;
+                background-color: $secundaria;
+                color: $principal;
+                cursor: pointer;
+            } */
+        }
+    }
+    
+    
+    
+    
+    
+    
+    }
+}
