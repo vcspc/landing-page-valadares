@@ -1,6 +1,6 @@
 import styles from '../styles/Perfil.module.scss';
 
-export default function Card(props) {
+export default function Perfil(props) {
     return (
        <div className={styles.card}>
         <img className={styles.foto} src={props.foto} alt={props.alt} />
