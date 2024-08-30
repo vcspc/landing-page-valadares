@@ -90,6 +90,8 @@ export default function Home() {
   return (
     <main>
       <div className="container__video">
+        <iframe className="container__video__iframe" src="https://www.youtube.com/embed/LAGMiJniy_Y" title="Valadares Fueta Advogados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
         <Botao 
           link="https://wa.me/5521965450470?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20sua%20assessoria%20jur%C3%ADdica"
           texto="ENTRE EM CONTATO"
