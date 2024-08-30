@@ -25,7 +25,7 @@ export default function Home() {
       return;
     }
 
-    /* alert('Email enviado com sucesso!'); */
+    alert('Email enviado com sucesso!');
 
     const templateParams = {
       from_nome: nome,
@@ -35,7 +35,7 @@ export default function Home() {
       from_empresa: empresa
     }
 
-    emailjs.send("service_8b34itn", "template_f65dhgj", templateParams, "ikUKFv1H7PN-YLn7l").then((response) => {
+    emailjs.send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, templateParams, process.env.NEXT_PUBLIC_EMAILJS_USER_ID).then((response) => {
       console.log('EMAIL ENVIADO!', response.status, response.text);
       setNome('');
       setEmail('');
@@ -45,10 +45,48 @@ export default function Home() {
     }, (error) => {
       console.log("ERRO!: ", error);
     })
-  }
+  } 
 
 
+    /* const ContactForm = () => {
+      const [formData, setFormData] = useState({
+        nome: '',
+        email: '',
+        cargo: '',
+        telefone: '',
+        empresa: '',
+      });
+      const [status, setStatus] = useState(null);
+    
+      const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+      };
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        try {
+          const response = await fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+          });
+    
+          const result = await response.json();
+          if (result.status === 'success') {
+            setStatus('Email enviado com sucesso!');
+          } else {
+            setStatus('Falha ao enviar o email.');
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          setStatus('Erro ao enviar o email.');
+        }
+      }; */
 
+    
   return (
     <main>
       <div className="container__video">
@@ -190,26 +228,26 @@ export default function Home() {
         <div className="container__formulario__titulo">
           <Titulo titulo="RECEBA MATERIAIS GRATUITOS SOBRE DIREITO PARA O SEU NEGÓCIO" cor="titulo-escuro"/>
         </div>
-        <form className="container__formulario__form" onSubmit={sendEmail}>
+        <form className="container__formulario__form" onSubmit={sendEmail/* handleSubmit */}>
           <div className="container__formulario__form__nome">
             <label htmlFor="nome">Nome<span>*</span></label>
-            <input type="text" id="nome" name="nome" onChange={(e) => setNome(e.target.value)} value={nome}/>
+            <input type="text" id="nome" name="nome" onChange={(e) => setNome(e.target.value)/* handleChange */} value={nome/* formData.name */} required/>
           </div>
           <div className="container__formulario__form__empresa">
             <label htmlFor="empresa">Empresa<span>*</span></label>
-            <input type="text" id="empresa" name="empresa" onChange={(e) => setEmpresa(e.target.value)} value={empresa}/>
+            <input type="text" id="empresa" name="empresa" onChange={(e) => setEmpresa(e.target.value)/* handleChange */} value={empresa/* formData.empresa */} required/>
           </div>
           <div className="container__formulario__form__cargo">
             <label htmlFor="cargo">Cargo</label>
-            <input type="text" id="cargo" name="cargo" onChange={(e) => setCargo(e.target.value)} value={cargo}/>
+            <input type="text" id="cargo" name="cargo" onChange={(e) => setCargo(e.target.value)/* handleChange */} value={cargo/* formData.cargo */} />
           </div>
           <div className="container__formulario__form__email">
             <label htmlFor="email">E-mail<span>*</span></label>
-            <input type="email" id="email" name="email" onChange={(e) => setEmail(e.target.value)} value={email}/>
+            <input type="email" id="email" name="email" onChange={(e) => setEmail(e.target.value)/* handleChange */} value={email/* formData.email */} required/>
           </div>
           <div className="container__formulario__form__telefone">
             <label htmlFor="telefone">Telefone<span>*</span></label>
-            <input type="text" id="telefone" name="telefone" onChange={(e) => setTelefone(e.target.value)} value={telefone}/>
+            <input type="text" id="telefone" name="telefone" onChange={(e) => setTelefone(e.target.value)/* handleChange */} value={telefone} required/>
           </div>
           <button className="container__formulario__form__botao" type="submi">RECEBA GRATUITAMENTE</button>
 
@@ -218,4 +256,6 @@ export default function Home() {
     </main>
   )
 }
+
+
 
