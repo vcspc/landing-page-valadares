@@ -167,7 +167,10 @@ main {
         height: 10rem;
         margin-top: 4rem;
         background-color: $secundaria;
-        border: 0.2rem solid $principal;
+        border-top: 0.2rem solid $principal;
+        border-bottom: 0.2rem solid $principal;
+        border-left: none;
+        border-right: none;
 
         p {
             @include texto-claro;

@@ -107,10 +107,10 @@ export default function Home() {
       </div>
 
       <div className="container__solucoes">
-        <Titulo titulo="SOLOÇÕES PERSONALIZADAS" cor="titulo-escuro"/>
+        <Titulo titulo="SOLUÇÕES PERSONALIZADAS" cor="titulo-escuro"/>
         <div className="container__solucoes__cards">
           <div className="container__solucoes__cards__linha">
-            <Card 
+            <Card
               icone="/departamento.svg"
               alt="icone em vetor de balões de conversa"
               titulo="SEU DEPARTAMENTO JURÍDICO"
