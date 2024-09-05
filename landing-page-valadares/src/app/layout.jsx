@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <header>
-          <img src="/fundo_branco.svg" alt="" className="header__img" />
+          <img src="/fundo_branco2.svg" alt="" className="header__img" />
           <div className="header__banner">
             <img src="/logo.svg" alt="logo Valadares Fueta Advogados" className="header__banner__logo" />
             <div className="header__banner__texto">
