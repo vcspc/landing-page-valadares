@@ -1,0 +1,39 @@
+@import 'variaveis';
+@import 'mixins';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0 2rem 0;
+
+    .texto {
+
+        @include titulo-escuro;
+        text-align: center;
+        line-height: 3rem;
+        color: #131219;
+
+        .destaque {
+            color: #0086f8;
+        }
+    }
+
+    .link {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+
+
+        .img {
+            width: 50%;
+        }
+
+    }
+
+    
+
+}

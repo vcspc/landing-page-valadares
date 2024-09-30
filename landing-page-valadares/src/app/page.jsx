@@ -7,6 +7,7 @@ import Perfil from '../../components/Perfil';
 import Topico from '../../components/Topico';
 import Link from 'next/link';
 import emailjs from '@emailjs/browser';
+import Google from '../../components/Google';
 import { useState } from 'react';
 
 export default function Home() {
@@ -255,6 +256,7 @@ export default function Home() {
 
         </form>
       </div>
+      <Google />
     </main>
   )
 }
